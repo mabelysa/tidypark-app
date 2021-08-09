@@ -3,7 +3,7 @@ class ParksController < ApplicationController
 
   def index
     parks = Park.all
-    render json: parks.as_json
+    render json: parks
   end
 
   def create
@@ -15,7 +15,7 @@ class ParksController < ApplicationController
       image_url: params["image_url"],
     )
     if parks.save
-      render json: parks.as_json
+      render json: parks
     else
       render json: { errors: parks.errors.full_messages }, status: :unprocessable_entity
     end
@@ -24,7 +24,7 @@ class ParksController < ApplicationController
   def show
     parks_id = params[:id]
     parks = Park.find(parks_id)
-    render json: parks.as_json
+    render json: parks
   end
 
   def update
@@ -36,7 +36,7 @@ class ParksController < ApplicationController
     parks.size = params["size"] || parks.size
     parks.image_url = params["image_url"] || parks.image_url
     if parks.save
-      render json: parks.as_json
+      render json: parks
     else
       render json: { errors: parks.errors.full_messages }, status: :unprocessable_entity
     end
