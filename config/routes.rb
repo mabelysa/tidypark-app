@@ -19,5 +19,11 @@ Rails.application.routes.draw do
 
   get "/committeds" => "committeds#index"
 
+  get "/committeds/:id" => "committeds#show"
+
   post "/committeds" => "committeds#create"
+
+  patch "committeds/:id" => "committeds#update"
+
+  delete "committeds/:id" => "committeds#destroy"
 end

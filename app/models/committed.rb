@@ -2,7 +2,7 @@ class Committed < ApplicationRecord
   belongs_to :park
   belongs_to :user
 
-  def tentativedate
+  # def tentativedate
     
-  end
+  # end
 end
