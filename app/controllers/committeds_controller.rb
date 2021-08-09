@@ -3,6 +3,12 @@ class CommittedsController < ApplicationController
     committeds = Committed.new(
       park_id: params[:park_id],
       user_id: params[:user_id],
+      observations: params[:observations],
+      needs: params[:needs],
+      teamsize: params[:teamsize],
+      tentativedate: params[:tentativedate],
+      experience: params[:experience],
+      reason: params[:reason],
     )
     if committeds.save
       render json: committeds.as_json
