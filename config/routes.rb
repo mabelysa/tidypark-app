@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   post "/sessions" => "sessions#create"
 
-  post "/committeds" => "committeds#create"
-
   get "/committeds" => "committeds#index"
+
+  post "/committeds" => "committeds#create"
 end
