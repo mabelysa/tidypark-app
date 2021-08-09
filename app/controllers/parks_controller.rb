@@ -44,7 +44,7 @@ class ParksController < ApplicationController
 
   def destroy
     parks_id = params[:id]
-    parks = Movie.find_by(id: parks_id)
+    parks = Park.find_by(id: parks_id)
     parks.destroy
     render json: { message: "You have deleted the park!" }
   end

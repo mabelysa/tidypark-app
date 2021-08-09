@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   delete "parks/:id" => "parks#destroy"
 
+  get "/users" => "users#index"
+
   post "/users" => "users#create"
 
   post "/sessions" => "sessions#create"
@@ -18,5 +20,4 @@ Rails.application.routes.draw do
   post "/committeds" => "committeds#create"
 
   get "/committeds" => "committeds#index"
-
 end
