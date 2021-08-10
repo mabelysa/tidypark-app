@@ -19,4 +19,11 @@ class UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
+  def destroy
+    users_id = params[:id]
+    users = User.find_by(id: users_id)
+    users.destroy
+    render json: { message: "You have deleted the user!" }
+  end
 end
