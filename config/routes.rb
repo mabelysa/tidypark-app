@@ -23,6 +23,8 @@ Rails.application.routes.draw do
 
   get "/committeds" => "committeds#index"
 
+  get "/committeds/all" => "committeds#index_all"
+
   get "/committeds/:id" => "committeds#show"
 
   post "/committeds" => "committeds#create"

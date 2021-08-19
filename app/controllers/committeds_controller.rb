@@ -6,6 +6,11 @@ class CommittedsController < ApplicationController
     render json: committeds
   end
 
+  def index_all
+    committeds = Committed.all
+    render json: committeds
+  end
+
   #   committeds_id = params[:id]
   #   committeds = Committed.find(committeds_id)
   # OR
