@@ -44,7 +44,7 @@ class CommittedsController < ApplicationController
     if committeds.save
       render json: committeds
     else
-      render json: { message: "Unauthorized: Log into your account!" }, status: :unprocessable_entity
+      render json: { errors: committeds.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
