@@ -58,7 +58,7 @@ Park.create!(name: "Willowbrook Park", borough: "Staten Island", address: "Richm
 
 Park.create!(name: "Brookfield Park", borough: "Staten Island", address: "Arthur Kill Rd. bet. Richmond Ave. and New Vale Ave.", size: "large", image_url: "https://www.nycgovparks.org/photo_gallery/full_size/23498.jpg")
 
-Committed.create!([
-  { user_id: 1, park_id: 1, observations: "trash by coastal rocks", needs: "bags, bins", teamsize: "10", tentativedate: "08/15/21", experience: "0", reason: "community service" },
-  { user_id: 1, park_id: 2, observations: "trash on baseball field", needs: "bags, bins", teamsize: "5", tentativedate: "08/16/21", experience: "2", reason: "keep NYC clean" },
-])
+# Committed.create!([
+#   { user_id: 1, park_id: 1, observations: "trash by coastal rocks", needs: "bags, bins", teamsize: "10", tentativedate: "08/15/21", experience: "0", reason: "community service" },
+#   { user_id: 1, park_id: 2, observations: "trash on baseball field", needs: "bags, bins", teamsize: "5", tentativedate: "08/16/21", experience: "2", reason: "keep NYC clean" },
+# ])
